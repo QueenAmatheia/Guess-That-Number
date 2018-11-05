@@ -1,0 +1,57 @@
+/*Queen Amathiea
+Guess That Number 3.0
+Infinte tries to guess a number 1-100*/
+
+#include <iostream> 
+#include<ctime>
+using namespace std;
+
+int main()
+{
+	int randomNum, guess, tries;
+	tries = 1;
+
+	srand(time(0));
+	randomNum = rand() % 100 - 1;
+	
+	cout << "Welcome to Guess That Number Version 3.0" << endl;
+	cout << "I am thinking of a number between 1 through 100" << endl;
+	cout << "You will be given a infinte amount of tries to guess the number" << endl;
+	cout << "I will tell you if your guess is too high or too low" << endl;
+	cout << "Let's get started!" << endl;
+	cout << "  " << endl;
+
+	while (true)
+	{
+		cout << "Enter in guess # " << tries << "  ";
+		cin >> guess;
+
+		if (guess < randomNum)
+		{
+			cout << "Higher!" << endl;
+			tries++;
+		}
+
+		else if (guess > randomNum)
+		{
+			cout << "Lower!" << endl;
+			tries++;
+		}
+
+		else if (guess == randomNum)
+		{
+			cout << "  " << endl;
+			cout << "Correct!" << endl;
+			cout << "You guessed it in " << tries << " tries!" << endl;
+			break;
+		}
+
+		else
+		{
+			cout << "Invalid guess. Try again" << endl;
+			tries++;
+		}
+	}
+	system("pause");
+	return 0;
+}
