@@ -1,0 +1,161 @@
+/*Queen Amatheia
+Guess that Number Version 2
+5 chances to guess 3 random numbers*/
+
+#include <iostream> 
+#include <ctime>
+using namespace std;
+
+int main()
+{
+	int randomNum1, randomNum2, randomNum3, guess11, guess12, guess13, guess21, guess22, guess23, guess31, guess32, guess33, guess41, guess42, guess43, guess51, guess52, guess53;
+	cout << "This is a Number Guessing Game ";
+	cin.ignore();
+	cout << "You will be given 5 chances to guess 3 numbers I have picked ";
+	cin.ignore();
+	cout << "The numbers are between 1 and 10 ";
+	cin.ignore();
+	cout << "I will tell you if your guesses are correct ";
+	cin.ignore();
+	cout << "1 = True  0 = False ";
+	cin.ignore();
+	cout << "Let's begin! ";
+	cin.ignore();
+
+	srand(time(0));
+	randomNum1 = rand() % (10 - 1) + 1;
+
+	srand(time(0));
+	randomNum2 = rand() % 10 + 1;
+
+	srand(time(0));
+	randomNum3 = rand() % (10 + 1) - 10;
+
+	cout << "----------------------------------------------";
+	cin.ignore();
+	cout << "Atempt #1  ";
+	cin.ignore();
+	cout << "Enter in your guess for the first number:  ";
+	cin >> guess11;
+	cout << "Enter in your guess for the second number:  ";
+	cin >> guess12;
+	cout << "Enter in your guess for the third number:  ";
+	cin >> guess13;
+	cout << "Are all three of your guesses correct?  ";
+	cout << (randomNum1 == guess11 && randomNum2 == guess12 && randomNum3 == guess13);
+	cin.ignore();
+	cin.ignore();
+	cout << "Is your first guess correct?  ";
+	cout << (randomNum1 == guess11);
+	cin.ignore();
+	cout << "Is your second guess correct?  ";
+	cout << (randomNum2 == guess12);
+	cin.ignore();
+	cout << "Is your third guess correct?  ";
+	cout << (randomNum3 == guess13);
+	cin.ignore();
+	
+
+	cout << "----------------------------------------------";
+	cin.ignore();
+	cout << "Atempt #2  ";
+	cin.ignore();
+	cout << "Enter in your guess for the first number:  ";
+	cin >> guess21;
+	cout << "Enter in your guess for the second number:  ";
+	cin >> guess22;
+	cout << "Enter in your guess for the third number:  ";
+	cin >> guess23;
+	cout << "Are all three guesses correct?  ";
+	cout << (randomNum1 == guess21 && randomNum2 == guess22 && randomNum3 == guess23);
+	cin.ignore();
+	cin.ignore();
+	cout << "Is your first guess correct?  ";
+	cout << (randomNum1 == guess21);
+	cin.ignore();
+	cout << "Is your second guess correct?  ";
+	cout << (randomNum2 == guess22);
+	cin.ignore();
+	cout << "Is your third guess correct?  ";
+	cout << (randomNum3 == guess23);
+	cin.ignore();
+	
+
+	cout << "----------------------------------------------";
+	cin.ignore();
+	cout << "Atempt #3  ";
+	cin.ignore();
+	cout << "Enter in your guess for the first number:  ";
+	cin >> guess31;
+	cout << "Enter in your guess for the second number:  ";
+	cin >> guess32;
+	cout << "Enter in your guess for the third number:  ";
+	cin >> guess33;
+	cout << "Are all three guesses correct?  ";
+	cout << (randomNum1 == guess31 && randomNum2 == guess32 && randomNum3 == guess33);
+	cin.ignore();
+	cin.ignore();
+	cout << "Is your first guess correct?  ";
+	cout << (randomNum1 == guess31);
+	cin.ignore();
+	cout << "Is your second guess correct?  ";
+	cout << (randomNum2 == guess32);
+	cin.ignore();
+	cout << "Is your third guess correct?  ";
+	cout << (randomNum3 == guess33);
+	cin.ignore();
+	
+
+	cout << "----------------------------------------------";
+	cin.ignore();
+	cout << "Atempt #4  ";
+	cin.ignore();
+	cout << "Enter in your guess for the first number:  ";
+	cin >> guess41;
+	cout << "Enter in your guess for the second number:  ";
+	cin >> guess42;
+	cout << "Enter in your guess for the third number:  ";
+	cin >> guess43;
+	cout << "Are all three guesses correct?  ";
+	cout << (randomNum1 == guess41 && randomNum2 == guess42 && randomNum3 == guess43);
+	cin.ignore();
+	cin.ignore();
+	cout << "Is your first guess correct?  ";
+	cout << (randomNum1 == guess41);
+	cin.ignore();
+	cout << "Is your second guess correct?  ";
+	cout << (randomNum2 == guess42);
+	cin.ignore();
+	cout << "Is your third guess correct?  ";
+	cout << (randomNum3 == guess43);
+	cin.ignore();
+
+
+	cout << "----------------------------------------------";
+	cin.ignore();
+	cout << "Atempt #5  ";
+	cin.ignore();
+	cout << "Enter in your guess for the first number:  ";
+	cin >> guess51;
+	cout << "Enter in your guess for the second number:  ";
+	cin >> guess52;
+	cout << "Enter in your guess for the third number:  ";
+	cin >> guess53;
+	cout << "Are all three guesses correct?  ";
+	cout << (randomNum1 == guess51 && randomNum2 == guess52 && randomNum3 == guess53);
+	cin.ignore();
+	cin.ignore();
+	cout << "Is your first guess correct?  ";
+	cout << (randomNum1 == guess51);
+	cin.ignore();
+	cout << "Is your second guess correct?  ";
+	cout << (randomNum2 == guess52);
+	cin.ignore();
+	cout << "Is your third guess correct?  ";
+	cout << (randomNum3 == guess53);
+	cin.ignore();
+	
+
+	system("pause");
+	return 0;
+}
