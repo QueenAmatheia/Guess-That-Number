@@ -1,0 +1,76 @@
+/*Queen Amatheia
+Guess that Number Version 1.0
+5 guess random number generator*/
+
+#include <iostream> 
+#include <ctime>
+using namespace std;
+
+int main()
+{
+	int randomNum, firstG, secondG, thirdG, fourthG, fifthG;
+
+	cout << "This is a Number Guessing Game ";
+	cin.ignore();
+	cout << "You will be given 5 chances to guess the number I have picked ";
+	cin.ignore();
+	cout << "The number is between 1 and 10 ";
+	cin.ignore();
+	cout << "I will tell you if the number is higher, lower, or equal to the number you picked ";
+	cin.ignore();
+	cout << "1 = True  0 = False ";
+	cin.ignore();
+	cout << "Let's begin! ";
+	cin.ignore();
+	
+	srand(time(0));
+	randomNum = rand() % 10 + 1;
+
+	cout << "Enter in First Guess: ";
+	cin >> firstG;
+	cout << "Is your guess higher? ";
+	cout << (firstG > randomNum) << endl;
+	cout << "Is your guess lower? ";
+	cout << (firstG < randomNum) << endl;
+	cout << "Is your guess correct? ";
+	cout << (firstG == randomNum) << endl;
+
+	cout << "Enter in Second Guess: ";
+	cin >> secondG;
+	cout << "Is your guess higher? ";
+	cout << (secondG > randomNum) << endl;
+	cout << "Is your guess lower? ";
+	cout << (secondG < randomNum) << endl;
+	cout << "Is your guess correct? ";
+	cout << (secondG == randomNum) << endl;
+
+	cout << "Enter in Third Guess: ";
+	cin >> thirdG;
+	cout << "Is your guess higher? ";
+	cout << (thirdG > randomNum) << endl;
+	cout << "Is your guess lower? ";
+	cout << (thirdG < randomNum) << endl;
+	cout << "Is your guess correct? ";
+	cout << (thirdG == randomNum) << endl;
+
+	cout << "Enter in Fourth Guess: ";
+	cin >> fourthG;
+	cout << "Is your guess higher? ";
+	cout << (fourthG > randomNum) << endl;
+	cout << "Is your guess lower? ";
+	cout << (fourthG < randomNum) << endl;
+	cout << "Is your guess correct? ";
+	cout << (fourthG == randomNum) << endl;
+
+	cout << "Enter in Fifth Guess: ";
+	cin >> fifthG;
+	cout << "Is your guess higher? ";
+	cout << (fifthG > randomNum) << endl;
+	cout << "Is your guess lower? ";
+	cout << (fifthG < randomNum) << endl;
+	cout << "Is your guess correct? ";
+	cout << (fifthG == randomNum) << endl;
+
+	system("pause");
+	return 0;
+}
